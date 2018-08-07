@@ -20,7 +20,7 @@ def brain():
 def post():
     if request.method == 'POST':  #this block is only entered when the form is submitted
         try:
-            input1 = float(request.form.get('input1'))
+            input1 = float(request.form['input1'])
             input2 = float(request.form['input2'])
             input3 = float(request.form['input3'])
             input4 = float(request.form['input4'])
